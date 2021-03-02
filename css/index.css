@@ -1,0 +1,89 @@
+body {
+    margin: 0 auto;
+    width: 450px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 50px;
+    color: cadetblue;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.controller {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    box-sizing: border-box;
+}
+
+.controller .row1,
+.controller .row2,
+.controller .row3 {
+    width: 450px;
+    height: 150px;
+}
+
+.controller .row1,
+.controller .row2 {
+    border-bottom: 5px solid rgb(60, 168, 168);
+}
+
+.controller .row1 .cell,
+.controller .row2 .cell,
+.controller .row3 .cell {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+.controller .row1 .cell:nth-child(2),
+.controller .row2 .cell:nth-child(2),
+.controller .row3 .cell:nth-child(2),
+.controller .row1 .cell:nth-child(3),
+.controller .row2 .cell:nth-child(3),
+.controller .row3 .cell:nth-child(3) {
+    border-left: 5px solid rgb(60, 168, 168);
+}
+
+.dog {
+    background-repeat: no-repeat;
+    background-image: url(/x.jpg);
+    background-position: center;
+    background-size: 90%;
+}
+
+.ele {
+    background-repeat: no-repeat;
+    background-image: url(/o.jpg);
+    background-position: center;
+    background-size: 90%;
+}
+
+.mask {
+    position: relative;
+    top: -375px;
+    left: 125px;
+    width: 200px;
+    height: 200px;
+    display: none;
+    font-size: 30px;
+    color: firebrick;
+}
+
+.result {
+    text-align: center;
+    line-height: 200px;
+}
+
+.mask button {
+    position: absolute;
+    left: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+}
